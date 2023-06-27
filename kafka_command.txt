@@ -1,0 +1,32 @@
+wget https://downloads.apache.org/kafka/3.5.0/kafka_2.12-3.5.0.tgz
+
+tar -xvf kafka_2.12-3.5.0.tgz
+
+sudo yum install java-1.8.0-openjdk
+
+
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum search java-1.8.O-openjdk
+Last metadata expiration check: 0:00:50 ago on Thu Jun 22 00:15:26 2023.
+No matches found.
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum search java-1.8.0-openjdk
+Last metadata expiration check: 0:01:24 ago on Thu Jun 22 00:15:26 2023.
+No matches found.
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum makecache
+Amazon Linux 2023 repository                                                             32 kB/s | 3.6 kB     00:00
+Amazon Linux 2023 Kernel Livepatch repository                                            28 kB/s | 2.9 kB     00:00
+Metadata cache created.
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum search java-1.8.0-openjdk
+Last metadata expiration check: 0:00:05 ago on Thu Jun 22 00:16:59 2023.
+No matches found.
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum search java-1.8.0-openjdk
+Last metadata expiration check: 0:03:58 ago on Thu Jun 22 00:16:59 2023.
+No matches found.
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum update
+Last metadata expiration check: 0:05:23 ago on Thu Jun 22 00:16:59 2023.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[ec2-user@ip-172-31-29-66 ~]$ sudo yum install java-1.8.0-openjdk
+Last metadata expiration check: 0:06:02 ago on Thu Jun 22 00:16:59 2023.
+No match for argument: java-1.8.0-openjdk
+Error: Unable to find a match: java-1.8.0-openjdk
